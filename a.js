@@ -20,7 +20,7 @@ app.use("/modules", express.static(path.join(__dirname, "node_modules")));
 const PORT = 3000;
 
 // 🔑 API KEY
-const GEMINI_API_KEY = "AIzaSyAuYKSBXts3lntMlj7FrSMKAorRM9wPwRo";
+const GEMINI_API_KEY = "GIMINAI_API_KEY";
 
 // ================================
 // 👑 ADMIN CONFIG — نمرة أو ID تاع صاحب الباجة
