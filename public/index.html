@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساعد الذكي للباجات</title>
+    <meta name="description" content="خدمة الذكاء الاصطناعي لخدمة زبائن الباجات الجزائرية">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .features {
+            text-align: right;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f7f7f7;
+            border-radius: 10px;
+        }
+        
+        .features h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .features ul {
+            list-style: none;
+        }
+        
+        .features li {
+            padding: 8px 0;
+            font-size: 1.1rem;
+        }
+        
+        .features li:before {
+            content: "✅ ";
+            margin-left: 10px;
+        }
+        
+        .api-info {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .api-info h3 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+        
+        .endpoint {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            color: #d32f2f;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .emoji {
+                font-size: 3rem;
+            }
+            
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🤖</div>
+        <h1>مساعد الذكي للباجات</h1>
+        <p>خدمة الذكاء الاصطناعي لخدمة زبائن الباجات الجزائرية</p>
+        
+        <div class="features">
+            <h2>المميزات:</h2>
+            <ul>
+                <li>محادثات ذكية بالدارجة الجزائرية</li>
+                <li>إدارة المنتجات والزبائن</li>
+                <li>تكامل مع WhatsApp و Instagram و Telegram</li>
+                <li>ذاكرة محادثات للزبائن</li>
+                <li>لوحة تحكم للأدمن</li>
+            </ul>
+        </div>
+        
+        <div class="api-info">
+            <h3>🚀 API Endpoints</h3>
+            <div class="endpoint">POST /chat</div>
+            <div class="endpoint">POST /save</div>
+            <div class="endpoint">GET /products</div>
+            <div class="endpoint">GET /clients</div>
+            <div class="endpoint">GET /history/:userId</div>
+        </div>
+        
+        <p style="margin-top: 30px; color: #888; font-size: 0.9rem;">
+            مدعوم بـ Google Gemini AI
+        </p>
+    </div>
+    
+    <!-- Vercel Speed Insights -->
+    <script type="module">
+        import { injectSpeedInsights } from '/modules/@vercel/speed-insights/dist/index.mjs';
+        injectSpeedInsights();
+    </script>
+</body>
+</html>

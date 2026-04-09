@@ -1,0 +1,26 @@
+{
+  "name": "server01",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-powered customer service chatbot API for Algerian businesses",
+  "main": "a.js",
+  "scripts": {
+    "start": "node a.js",
+    "dev": "node a.js"
+  },
+  "keywords": [
+    "chatbot",
+    "express",
+    "ai",
+    "gemini",
+    "customer-service"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "cors": "^2.8.5",
+    "@vercel/speed-insights": "^1.0.12"
+  }
+}

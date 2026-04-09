@@ -1,10 +1,21 @@
 import express from "express";
 import fetch from "node-fetch";
 import cors from "cors";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+// Serve static files from public directory
+app.use(express.static(path.join(__dirname, "public")));
+
+// Serve Speed Insights module from node_modules
+app.use("/modules", express.static(path.join(__dirname, "node_modules")));
 
 const PORT = 3000;
 
