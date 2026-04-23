@@ -153,5 +153,11 @@
         import { injectSpeedInsights } from '/modules/@vercel/speed-insights/dist/index.mjs';
         injectSpeedInsights();
     </script>
+    
+    <!-- Vercel Web Analytics -->
+    <script type="module">
+        import { inject } from '/modules/@vercel/analytics/dist/index.mjs';
+        inject();
+    </script>
 </body>
 </html>
